@@ -75,12 +75,6 @@ span {
     color: var(--main-color);
 }
 
-.menu-icon{
-    font-size: 3.6em;
-    color: var(--text-color);
-    display: none;
-}
-
 /* Home Page Code */
 
 .home{
@@ -110,7 +104,7 @@ span {
 
 .home-content p{
     font-size: 1.6rem;
-
+    text-align: center;
 }
 
 /* Outreach Code */

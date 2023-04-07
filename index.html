@@ -7,10 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content = "IE-edge">
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <title> Sagar's Personal Portfolio </title>
-        <script src = "script.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="script1.js"></script>
         <!-- boxicons-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
         <!-- custom css-->
         <link rel = "stylesheet" href="style.css">
 
@@ -26,11 +26,20 @@
                 <a href="#talents">Talents</a>
                 <a href="#portfolio">Projects</a>
                 <a href="#contact">Contact</a>
-
             </nav>
+        
+        <div class="light">
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for = "toggle">
+                <i class="bx bxs-sun" style='color:#ffffff'></i>
+                <i class='bx bxs-moon' style='color:#ffffff' ></i>
+                <span class = "ball"></span>
+            </label>
+        </div>
 
 
         </header>
+        
 
         <!-- home section design  -->
         <section class="home" id="home">
@@ -44,7 +53,7 @@
                     <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail' ></i></a>
                     <a href="https://www.espncricinfo.com/team/india-6" target="_blank" rel="noopener noreferrer"><i class='bx bx-cricket-ball'></i></a>
                 </div>
-                <a href="#" class = "btn">Download Resume</a>
+                <a href="#contact" class = "btn">Contact Me!</a>
             </div>
             <div class="home-img">
                 <img src="Images/HomeIcon 2.png" alt="">
@@ -185,7 +194,8 @@
             </form>
         </section-contact>
 
-
+        <!-- Footer Section  -->
+        
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright &copy; 2023 by Sagar Shah | All Rights Reserved</p>

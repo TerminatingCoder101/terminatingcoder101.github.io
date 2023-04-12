@@ -8,7 +8,6 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <title> Sagar's Personal Portfolio </title>
         <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="script1.js"></script>
         <!-- boxicons-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!-- custom css-->
@@ -18,25 +17,24 @@
 
     <body>
         <header class = "header">
-            <a href="#" class = "logo">Sagar's Portfolio</a>
+            <a href="#home" class = "logo">Sagar's Portfolio</a>
 
             <nav class = "navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About Me</a>
-                <a href="#talents">Talents</a>
+                <a href="#knowledge">Knowledge</a>
                 <a href="#portfolio">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         
-        <div class="light">
-            <input type="checkbox" id="toggle">
-            <label class="toggle" for = "toggle">
+        <div class="theme">
+            <input type="checkbox" id="toggle" style="display:none;">
+            <label class="toggle-id" for = "toggle">
                 <i class="bx bxs-sun" style='color:#ffffff'></i>
                 <i class='bx bxs-moon' style='color:#ffffff' ></i>
                 <span class = "ball"></span>
             </label>
         </div>
-
 
         </header>
         
@@ -47,7 +45,7 @@
                 <h3> Welcome! My Name is </h3>
                 <h1> Sagar Shah</h1>
                 <h3> And I'm a <span>Sophomore in High School</span></h3>
-                <p> Wow! I'm so glad you are here! Feel free to check out the rest of my website. You can do this by clicking through my About, Talents, and Projects page. You can also send me an email using the contact form at the very bottom! Thanks once again!</p>
+                <p> Wow! I'm so glad you are here! Feel free to check out the rest of my website. You can do this by clicking through my About, Knowledge, and Projects page. You can also send me an email using the contact form at the very bottom! Thanks once again!</p>
                 <div class="outreach">
                     <a href="https://github.com/TerminatingCoder101" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
                     <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail' ></i></a>
@@ -66,30 +64,51 @@
                 <div class="about-img">
                     <img src="Images/AboutMe Icon.png" alt= "">
                 </div>
-
-
                 <div class="about-content">
                     <h2 class="heading"> About Me </h2>
-                    <h3>Software Developer, Engineer, Musician</h3>
-                    <p>Whats Up, add more stuff here</p>
-                    <a href="#" class = "btn">Read More</a>
+                    <h3 class = "subheading">Programmer, Engineer, Musician</h3>
+                    <button class = "btn" id = "readmorebtn">Read More</button>
+                    <div class="readmore" id="readtext">
+                        <p style="text-align: center;">
+                             Ever since a young age, I have the interest of engineering, whether that be 
+                             to craft objects or break things apart. After learning that programming and engineering
+                             go hand in hand, I delved deeper into programming, learning more about OOP languages,
+                             web development, and AI. Now, I use both of those skills to build some robotics projects!
+                             Furthermore, I am also an avid musician. I play the Indian drums called the <a href="https://www.britannica.com/art/tabla" target="_blank" rel="noopener noreferrer" style="color: aqua; font-style: oblique;">tabla</a>. 
+                             I have been playing the tabla for more than 12 years and I have given numerous concerts!
+                             I also have been playing the viola for the past 6 years and have been in the advanced orchestra levels throughout my school years!
+                             After gaining knowledge of both types of music (Indian classical and string), I have really been able to delve deeper into this mind-blowing realm!
+                        </p>
+                    </div>
+                    <script>document.getElementById('readtext').hidden = true;</script> 
                 </div>
             </section>
 
         <!-- services section design -->
-        <section class="services" id="talents">
-            <h2 class="heading">My <span>Talents</span></h2>
+        <section class="services" id="knowledge">
+            <h2 class="heading">Areas I Have <span>Knowledge</span> In!</h2>
             
             <!-- Web Development -->
             <div class="services-container">
                 <div class="services-box">
                     <i class='bx bx-code-curly' ></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. Odio corporis deserunt, ipsum culpa 
-                         et quisquam eaque corrupti cumque minima natus atque, odit facilis eos 
-                          officiis illo exercitationem, mollitia libero facere.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Programming</h3>
+                    <p id="skillIntro">
+                        Programming is everywhere in our lives, and being
+                        able to program has really become a necessity in our technologically-advanced society. Click 
+                        the read more button to look at the programming skills I have!
+                    </p>
+                    <p id="skillpara">Programming has always been interesting to me because I am a type of person who 
+                        likes to see the results of the things that I do. And for that to happen, I have to be
+                        able to program my object to do what I want it to do. In this case for example, building 
+                        a website, would be the result of me programming it.</p>
+                    <script>document.getElementById('skillpara').hidden = true;</script>
+
+                    <a class="btn" id="btn1">Read More</a>
+
+                    <button id= "newBtn">
+                        <i class='bx bx-arrow-back'></i>
+                    </button> 
                 </div>
 
                 <!-- CAD  -->
@@ -111,6 +130,7 @@
                          et quisquam eaque corrupti cumque minima natus atque, odit facilis eos 
                           officiis illo exercitationem, mollitia libero facere.</p>
                     <a href="#" class="btn">Read More</a>
+                    <script>btn.onclick</script>
                 </div>
 
 
@@ -128,15 +148,15 @@
                     <div class="portfolio-layer">
                         <h4>Personal Portfolio</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
                     <img src="Images/HomeIcon3.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Calculator</h4>
+                        <h4>Analog Digital Clock</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -144,7 +164,7 @@
                     <div class="portfolio-layer">
                         <h4>Festival Of Tabla</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -152,7 +172,7 @@
                     <div class="portfolio-layer">
                         <h4>Robotics</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -160,7 +180,7 @@
                     <div class="portfolio-layer">
                         <h4>Speech and Debate</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -168,7 +188,7 @@
                     <div class="portfolio-layer">
                         <h4>Yoga</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>
             </div>
@@ -180,19 +200,27 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form action="#">
+            <form action="sendMail()">
                 <div class="input-box">
-                    <input type = "text" placeholder="Name">
-                    <input type = "email" placeholder="Email">
+                    <input id = "name" type = "text" placeholder="Name">
+                    <input id = "email" type = "email" placeholder="Email">
                 </div>
                 <div class="input-box">
-                    <input type = "number" placeholder="Number">
-                    <input type = "text" placeholder="Email Subject">
+                    <input id = "number" type = "number" placeholder="Number">
+                    <input id = "subject" type = "text" placeholder="Email Subject">
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send" class="btn">
+                <button id="submitButton" type="submit" class="btn">Send</button>
             </form>
         </section-contact>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("lbkH81IwWeruBNumC");
+            })();
+        </script>
 
         <!-- Footer Section  -->
         
@@ -205,9 +233,8 @@
             </div>
         </footer>
 
-        <script src = "script.js"></script>
+        <script src = "script1.js"></script>
     </body>
-
 
 
 </html>

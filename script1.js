@@ -10,31 +10,44 @@ var skillBtn = document.getElementById('btn1')
 var skillpara = document.getElementById('skillpara')
 var skillintro = document.getElementById('skillIntro')
 var newBtn = document.getElementById('newBtn')
+var robotBtn = document.getElementById('RobotBtn')
+var second = document.getElementById('Second')
+var robotics = document.getElementById('robotics')
 
 
+robotBtn.addEventListener('click', robotics, false);
 button.addEventListener('click',hideshow, false);
 skillBtn.addEventListener('click', skillFunction, false);
-newBtn.addEventListener('click', newBtnFunc, false );
+//newBtn.addEventListener('click', newBtnFunc, false );
 
 
 function skillFunction(){
+    skillBtn.style.visibility = 'hidden';
     skillintro.hidden = true;
-    skillBtn.hidden = true;
     skillpara.hidden = false;
-    newBtn.hidden = true;
-    //document.getElementsByClassName('services-box').width = 100;
-    // document.getElementById("services-container").classList.remove('services-box');
-    // document.getElementById("services-container").classList.add('services-box2');
-
+    setTimeout(newBtnFunc, 5000);
+    //newBtn.style.display = "block";
 }
 
 function newBtnFunc(){
     skillintro.hidden = false;
-    skillBtn.hidden = false;
+    skillBtn.style.visibility = 'visible';
     skillpara.hidden = true;
-    newBtn.hidden = true;
+   // newBtn.style.display = "none";
     // document.getElementById("services-container").classList.remove('services-box2');
     // document.getElementById("services-container").classList.add('services-box');
+}
+
+
+function robotics(){
+    alert("Called!");
+    robotBtn.style.display = "none";
+    second.hidden = false;
+    // setTimeout(robotics2,5000);
+}
+
+function robotics2(){
+    second.hidden = true;
 }
 
 function hideshow() {

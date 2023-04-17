@@ -106,9 +106,10 @@
 
                     <a class="btn" id="btn1">Read More</a>
 
-                    <button id= "newBtn">
+                    <!-- <button id= "newBtn">
                         <i class='bx bx-arrow-back'></i>
                     </button> 
+                    <script>document.getElementById('newBtn').style.display = "none";</script> -->
                 </div>
 
                 <!-- CAD  -->
@@ -144,50 +145,71 @@
         
             <div class="portfolio-container">
                 <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
+                    <img src="Images/Personal Portfolio.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Personal Portfolio</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#" class="btn_portfolio">Read More</a>
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Personal Portfolio</h4>
+                        <br></br>
+                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">This is my Personal Website project! Yes, the one you are currently looking at! 
+                            Please take a look at the Github repo for more details!!</p>
+                            <a id = "Github" href="https://github.com/TerminatingCoder101/terminatingcoder101.github.io" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                        </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Images/ClockGif.gif" alt="">
+                    <div id = "Clock" class="portfolio-layer">
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Analog Clock</h4>
+                        <p style = "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">This was a simple analog clock that I made using my knowledge in HTML, CSS, and JS. My main focus for this project was to improve my JS skills. 
+                            By implementing certain functions, I was able to make the clock show the proper time. The link to my Github repo is below! Hope you like it!
+                        </p>
+                        <a id = "Github" href="https://github.com/TerminatingCoder101/Analog-Clock-Project-" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
                     <img src="Images/HomeIcon3.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Analog Digital Clock</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#" class="btn_portfolio">Read More</a>
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Festival Of Tabla</h4>
+                        <br></br>
+                        <p style = "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">In the summer of 2022, I gave a ~30-minute solo concert for the Indian drums. The concert was in front of
+                            international maestros in the field of Indian Classical music. Click the link below to watch the video! 
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=RTUXNs6Rf98" target="_blank" rel="noopener noreferrer" class="btn_portfolio">Watch Now!</a>
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
+                    <img src="Images/Robotics Pic..jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>Festival Of Tabla</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#" class="btn_portfolio">Read More</a>
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Robotics</h4>
+                        <p id = "robotics" style= "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">
+                            I have loved robotics my entire life, and after learning more about it, I have been able to really quench my thirst of knowledge
+                            for the subject. 
+                        </p>
+                        <p style= "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;" id="Second">
+                            I made my own "Amazon Alexa", which can answer questions similar to the real Alex. I have also done some random fun engineering projects.
+                            I am also part of my schools FIRST Robotics team, where I hold the positions of one of the lead advisors and programmers.
+                        </p>
+                        <button style="padding-bottom: 1rem;" class = "btn_portfolio" id = "RobotBtn">Read More</button>
+
+                        <script>document.getElementById('Second').hidden = true;</script> 
+
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
+                    <img src="Images/Speech and Debate.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>Robotics</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#" class="btn_portfolio">Read More</a>
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 0.5rem; padding-right: 0.5rem;">Speech & Debate</h4>
+                        <br></br>
+                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">
+                            I have been doing Speech and Debate for over 6 years now, and I have one numerous medals.
+                            After much time and dedication, I was able to earn the bronze award for my communication skills!
+                        </p>
+                        <!-- <a href="#" class="btn_portfolio">Read More</a> -->
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
+                    <img src="Images/Yoga Pose.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>Speech and Debate</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
-                        <a href="#" class="btn_portfolio">Read More</a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Yoga</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
+                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Yoga</h4>
+                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis ab, quaerat vel accusantium nisi dolores corrupti non in, blanditiis quia! Eaque excepturi, ad accusamus aliquid eligendi deleniti quidem nesciunt!</p>
                         <a href="#" class="btn_portfolio">Read More</a>
                     </div>
                 </div>

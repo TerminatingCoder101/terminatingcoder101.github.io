@@ -7,8 +7,15 @@
 var button = document.getElementById('readmorebtn')
 var para = document.getElementById('readtext')
 var skillBtn = document.getElementById('btn1')
+var skillBtn2 = document.getElementById('btn2')
+var skillBtn3 = document.getElementById('btn3')
 var skillpara = document.getElementById('skillpara')
+var skillpara1 = document.getElementById('skillpara1')
+var skillpara2 = document.getElementById('skillpara2')
 var skillintro = document.getElementById('skillIntro')
+var skillintro1 = document.getElementById('skillIntro1')
+var skillintro2 = document.getElementById('skillIntro2')
+
 var newBtn = document.getElementById('newBtn')
 var robotBtn = document.getElementById('RobotBtn')
 var second = document.getElementById('Second')
@@ -17,7 +24,10 @@ var robotics = document.getElementById('robotics')
 
 robotBtn.addEventListener('click', robotics, false);
 button.addEventListener('click',hideshow, false);
-skillBtn.addEventListener('click', skillFunction, false);
+skillBtn.addEventListener('click', skillFunction);
+skillBtn2.addEventListener('click', skillFunction1);
+skillBtn3.addEventListener('click', skillFunction2);
+
 //newBtn.addEventListener('click', newBtnFunc, false );
 
 
@@ -26,16 +36,38 @@ function skillFunction(){
     skillintro.hidden = true;
     skillpara.hidden = false;
     setTimeout(newBtnFunc, 5000);
-    //newBtn.style.display = "block";
+}
+
+function skillFunction1(){
+    skillBtn2.style.visibility = 'hidden';
+    skillintro1.hidden = true;
+    skillpara1.hidden = false;
+    setTimeout(newBtnFunc1, 5000);
+}
+
+function skillFunction2(){
+    skillBtn3.style.visibility = 'hidden';
+    skillintro2.hidden = true;
+    skillpara2.hidden = false;
+    setTimeout(newBtnFunc2, 5000);
 }
 
 function newBtnFunc(){
     skillintro.hidden = false;
     skillBtn.style.visibility = 'visible';
     skillpara.hidden = true;
-   // newBtn.style.display = "none";
-    // document.getElementById("services-container").classList.remove('services-box2');
-    // document.getElementById("services-container").classList.add('services-box');
+}
+
+function newBtnFunc1(){
+    skillintro1.hidden = false;
+    skillBtn2.style.visibility = 'visible';
+    skillpara1.hidden = true;
+}
+
+function newBtnFunc2(){
+    skillintro2.hidden = false;
+    skillBtn3.style.visibility = 'visible';
+    skillpara2.hidden = true;
 }
 
 

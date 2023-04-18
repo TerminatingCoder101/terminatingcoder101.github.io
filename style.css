@@ -308,13 +308,13 @@ input:checked + .toggle-id .ball{
     align-items: center;
 }
 
-/* Services Code  */
+/* things Code  */
 
-.services h2{
+.things h2{
     margin-bottom: 5rem;
 }
 
-.services-container{
+.things-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +322,7 @@ input:checked + .toggle-id .ball{
     gap: 2rem;
 }
 
-.services-container .services-box {
+.things-container .things-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -331,7 +331,7 @@ input:checked + .toggle-id .ball{
     border: .2rem solid var(--bg-color);
 }
 
-.services-container .services-box2{
+.things-container .things-box2{
     height: 50px;
     width: 300px;
     background: var(--second-bg-color);
@@ -367,22 +367,22 @@ input:checked + .toggle-id .ball{
 } */
 
 
-.services-container .services-box:hover{
+.things-container .things-box:hover{
     border-color: var(--main-color) ;
     transform:scale(1.15);
     transition: .3s ease;
 }
 
-.services-box i {
+.things-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3{
+.things-box h3{
     font-size: 2.6rem;
 }
 
-.services-box p{
+.things-box p{
     font-size: 1.4rem;
     margin: 1rem 0 3rem;
 }
@@ -613,7 +613,7 @@ input:checked + .toggle-id .ball{
         padding: 10rem 3% 2rem;
     }
 
-    .services{
+    .things{
         padding-bottom: 7rem;
     }
 
@@ -680,7 +680,7 @@ input:checked + .toggle-id .ball{
         width: 70vw;
         padding-top: 4rem;
     }
-    .services h2{
+    .things h2{
         padding-bottom: 3rem;
     }
     

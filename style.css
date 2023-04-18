@@ -166,6 +166,7 @@ input:checked + .toggle-id .ball{
     display: none;
 }
 
+
 .navbar a:hover,
 .navbar a:active
     {
@@ -182,6 +183,19 @@ input:checked + .toggle-id .ball{
 
 .home-img img{
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY();
+    }
 }
 
 .home-content h3{
@@ -579,11 +593,7 @@ input:checked + .toggle-id .ball{
 
 }
 
-.menu-icon{
-    font-size: 3.6em;
-    color: var(--text-color);
-    display: none;
-}
+
 
 
 /* BREAKPOINTS */
@@ -611,6 +621,10 @@ input:checked + .toggle-id .ball{
         padding-bottom: 7rem;
     }
 
+    .contact{
+        min-height: auto;
+    }
+
     .footer{
         padding: 2rem 3%;
     }
@@ -631,13 +645,19 @@ input:checked + .toggle-id .ball{
         background:var(--bg-color);
         border-top: .1rem solid rgba(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
     }
 
-    /* .navbar a{
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-    } */
+    }
 
     .home{
         flex-direction: column;
@@ -675,6 +695,39 @@ input:checked + .toggle-id .ball{
 }
 
 @media (max-width: 617px){
-    
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
 }
+
+@media (max-width: 450){
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 365){
+    .home-img img{
+        width: 90vw;
+    }
+
+    .about-img img{
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+}
+
 

@@ -61,6 +61,11 @@ span {
 
 }
 
+.header.sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
+
+
 .toggle-id{
     background:#fff;
     cursor: pointer;
@@ -153,6 +158,12 @@ input:checked + .toggle-id .ball{
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
 }
 
 .navbar a:hover,
@@ -418,6 +429,8 @@ input:checked + .toggle-id .ball{
 
 }
 
+
+
 .portfolio-layer h4{
     font-size: 3rem;
     text-align: left;
@@ -566,13 +579,18 @@ input:checked + .toggle-id .ball{
 
 }
 
+.menu-icon{
+    font-size: 3.6em;
+    color: var(--text-color);
+    display: none;
+}
+
 
 /* BREAKPOINTS */
 
 @media (max-width: 1200px){
     html{
         font-size: 55%;
-
     }
 }
 
@@ -585,6 +603,14 @@ input:checked + .toggle-id .ball{
         padding: 10rem 3% 2rem;
     }
 
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
     .footer{
         padding: 2rem 3%;
     }
@@ -595,6 +621,60 @@ input:checked + .toggle-id .ball{
     #menu-icon {
         display: block;
     }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background:var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
+
+    /* .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    } */
+
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        padding-top: 4rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 70vw;
+        padding-top: 4rem;
+    }
+    .services h2{
+        padding-bottom: 3rem;
+    }
+    
+    .portfolio h2{
+        padding-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
 
+@media (max-width: 617px){
+    
+}
 

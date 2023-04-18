@@ -188,13 +188,13 @@ input:checked + .toggle-id .ball{
 
 @keyframes floatImage {
     0%{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     50%{
-        transform: translateY(-2.4rem);
+        transform: translateX(2.4rem);
     }
     100%{
-        transform: translateY();
+        transform: translateX(0);
     }
 }
 

@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -13,10 +11,11 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!-- custom css-->
         <link rel = "stylesheet" href="style.css">
-
+        
     </head>
 
     <body>
+    
         <header class = "header">
             <a href="#home" class = "logo">Sagar's Portfolio</a>
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -38,13 +37,25 @@
             </script>
 
             <div class="theme">
-                <input type="checkbox" id="toggle" style="display:none;">
-                <label class="toggle-id" for = "toggle">
-                    <i class="bx bxs-sun" style='color:#ffffff'></i>
-                    <i class='bx bxs-moon' style='color:#ffffff' ></i>
-                    <span class = "ball"></span>
-                </label>
+                <!-- <input type="checkbox" id="toggle" style="display:none;"> -->
+                <i class="bx bxs-sun" style='color:#ffffff'></i>
+                <i class='bx bxs-moon' style='color:#ffffff' ></i>             
             </div>
+
+            <script>
+                const body = document.querySelector('body');
+                const toggle = document.querySelector('.theme');
+                const setTheme = theme => document.documentElement.className = theme;
+                toggle.addEventListener('click', () => {
+                    toggle.classList.toggle('dark');
+                    if(toggle.className == ('theme dark')){
+                        setTheme('dark');
+                    }else{
+                        setTheme('light');}
+                });
+            </script>
+
+
         </header>
 
 
@@ -270,6 +281,8 @@
                 <a href="#home"><i class='bx bxs-up-arrow-alt bx-tada bx-rotate-90' ></i></a>
             </div>
         </footer>
+
+
         <script>  
             let sections = document.querySelectorAll('section');
             let navLinks = document.querySelectorAll('header nav a');
@@ -305,11 +318,7 @@
         </script>
 
         <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
         <script src = "script1.js"></script>
-
-
-
 
     </body>
 

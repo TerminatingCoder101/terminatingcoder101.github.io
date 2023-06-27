@@ -11,19 +11,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root.dark{
+:root{
     --bg-color: #1f242d;
     --second-bg-color:#323946;
     --text-color: #fff;
     --main-color: rgb(241, 148, 244);
     }
 
-:root.light{
+/* :root.light{
     --bg-color: #d4d4d4;
     --second-bg-color:#8a96ad;
     --text-color: #0041a9;
     --main-color: rgb(27, 188, 94);      
-    }
+    } */
 
 html {
     font-size: 62.5%;
@@ -89,7 +89,7 @@ span {
     transition: all 0.3s ease-in-out;
 }
 
-.theme i{
+/* .theme i{
     color: #1f242d;
     width: 50%;
     line-height: 41px;
@@ -102,7 +102,7 @@ span {
     -webkit-transform: translateX(39px);
 	-ms-transform: translateX(39px);
 	transform: translateX(39px); 
-}
+} */
 
 /* .theme.active .ball{
     -webkit-transform: translateX(39px);

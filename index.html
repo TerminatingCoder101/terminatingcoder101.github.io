@@ -1,328 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content = "IE-edge">
-        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-        <title> Sagar's Personal Portfolio </title>
-        <link rel="icon" href="/Images/7421555.png">
-
-        <script type="text/javascript" src="jquery.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- boxicons-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- custom css-->
-        <link rel = "stylesheet" href="style.css">
-
-    </head>
-
-    <body>
-    
-        <header class = "header">
-            <a href="#home" class = "logo">Sagar's Portfolio</a>
-            <i class='bx bx-menu' id="menu-icon"></i>
-
-            <nav class = "navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#knowledge">Knowledge</a>
-                <a href="#portfolio">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <!-- <script>
-                let menuIcon = document.querySelector('#menu-icon');
-                let navbar = document.querySelector('.navbar');
-                menuIcon.onclick = () => {
-                    menuIcon.classList.toggle('bx-x');
-                    navbar.classList.toggle('active');
-                };
-            </script>
-
-            <div class="theme">
-                <input type="checkbox" id="toggle" style="display:none;"> 
-                <i class="bx bxs-sun" style='color:#ffffff'></i>
-                <i class='bx bxs-moon' style='color:#ffffff' ></i>             
-            </div> -->
-
-            <!-- <script>
-                const body = document.querySelector('body');
-                const toggle = document.querySelector('.theme');
-                const setTheme = theme => document.documentElement.className = theme;
-                toggle.addEventListener('click', () => {
-                    toggle.classList.toggle('dark');
-                    if(toggle.className == ('theme dark')){
-                        setTheme('dark');
-                    }else{
-                        setTheme('light');}
-                });
-            </script> -->
-
-
-        </header>
-
-
-        <!-- home section design  -->
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3> Welcome! My Name is </h3>
-                <h1> Sagar Shah</h1>
-                <h3> And I'm a <span class="multiple-text"></span></h3> 
-                <p> Wow! I'm so glad you are here! Feel free to check out the rest of my website. You can do this by clicking through my About, Knowledge, and Projects page. You can also send me an email using the contact form at the very bottom! Thanks once again!</p>
-                <div class="outreach">
-                    <a href="https://github.com/TerminatingCoder101" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-                    <a href="https://devpost.com/ganesha4us1" target="_blank" rel="noopener noreferrer"><i class='bx bx-code'></i></a>
-                    <a href="https://www.espncricinfo.com/team/india-6" target="_blank" rel="noopener noreferrer"><i class='bx bx-cricket-ball'></i></a>
-                </div>
-                <a href="#contact" class = "btn">Contact Me!</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Shah - Computer Science Researcher & Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section with Gradient Background -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">SAGAR SHAH</h1>
+            <p class="hero-subtitle">
+                Computer Science Researcher & Engineer specializing in AI/ML, Robotics, and Aerospace Systems
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary glass-effect">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Contact Me
+                </button>
+                <button class="btn btn-outline glass-effect">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15,3 21,3 21,9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Resume
+                </button>
             </div>
-            <div class="home-img">
-                <img src="Images/HomeIcon 2.png" alt="">
-            </div>
+        </div>
+    </section>
 
-        </section>
-
-            <!-- about section design -->
-            <section class="about" id="about">
-                <div class="about-img">
-                    <img src="Images/AboutMe Icon.png" alt= "">
-                </div>
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text">About Me</h2>
+            <div class="about-grid">
                 <div class="about-content">
-                    <h2 class="heading"> About Me </h2>
-                    <h3 class = "subheading">Programmer, Engineer, Musician</h3>
-                    <button class = "btn" id = "readmorebtn">Read More</button>
-                    <div class="readmore" id="readtext">
-                        <p style="text-align: center;">
-                             Ever since a young age, I have the interest of engineering, whether that be 
-                             to craft objects or break things apart. After learning that programming and engineering
-                             go hand in hand, I delved deeper into programming, learning more about OOP languages,
-                             web development, and AI. Now, I use both of those skills to build some robotics projects!
-                             Furthermore, I am also an avid musician. I play the Indian drums called the <a href="https://www.britannica.com/art/tabla" target="_blank" rel="noopener noreferrer" style="color: aqua; font-style: oblique;">tabla</a>. 
-                             I have been playing the tabla for more than 12 years and I have given numerous concerts!
-                             I also have been playing the viola for the past 6 years and have been in the advanced orchestra levels throughout my school years!
-                             After gaining knowledge of both types of music (Indian classical and string), I have really been able to delve deeper into the mind-blowing realm of music!
-                        </p>
+                    <p class="about-text">
+                        I'm a dedicated computer science researcher with extensive experience in AI/ML, robotics, and aerospace
+                        systems. Currently working with the US Air Force Research Lab and Stanford University, I specialize in
+                        developing cutting-edge solutions for complex engineering challenges.
+                    </p>
+                    <div class="skills-tags">
+                        <span class="skill-tag glass-card">Python</span>
+                        <span class="skill-tag glass-card">C++</span>
+                        <span class="skill-tag glass-card">Machine Learning</span>
+                        <span class="skill-tag glass-card">Computer Vision</span>
+                        <span class="skill-tag glass-card">Robotics</span>
+                        <span class="skill-tag glass-card">React</span>
                     </div>
-                    <script>document.getElementById('readtext').hidden = true;</script> 
+                    <div class="social-buttons">
+                        <button class="btn btn-outline btn-sm">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </button>
+                        <button class="btn btn-outline btn-sm">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            LinkedIn
+                        </button>
+                    </div>
                 </div>
-            </section>
-
-        <!-- things section design -->
-        <section class="things" id="knowledge">
-            <h2 class="heading">Areas I Have <span>Knowledge</span> In!</h2>
-            
-            <!-- Web Development -->
-            <div class="things-container">
-                <div class="things-box">
-                    <i class='bx bx-code-curly' ></i>
-                    <h3>Programming</h3>
-                    <p id="skillIntro">
-                        Programming is everywhere in our lives, and being
-                        able to program has really become a necessity in our technologically-advanced society. Click 
-                        the read more button to look at the programming skills I have!
-                    </p>
-                    <p id="skillpara">Programming has always been interesting to me because I am a type of person who 
-                        likes to see the results of the things that I do. I have knowledge in multiple languages including
-                    C++, Java, JavaScript, HTML, CSS, Swift, Kotlin. I am also learning SQL and Python. </p>
-                    <script>document.getElementById('skillpara').hidden = true;</script>
-
-                    <a class="btn" id="btn1">Read More</a>
-                </div>
-
-                <!-- CAD  -->
-                <div class="things-box">
-                    <i class='bx bx-paint' ></i>
-                    <h3>Engineering</h3>
-                    <p id = "skillIntro1">I have been doing engineering projects for a while now. Some of the projects that I have made include a self navigating robot, 
-                        a simple bicycle energy generator, and more.
-                    </p>
-                    <p id="skillpara1">
-                        I also 3D design and print mostly using SolidWorks, Fusion 360, and Onshape.
-                        An asset that I acquired a few years back is being able to do graphics animations using AutoDesk Maya 3D and Adobe Photoshop.
-                        That has been an amazing adventure in it self!
-                    </p>
-                    <a class="btn" id="btn2">Read More</a>
-                    <script>document.getElementById('skillpara1').hidden = true;</script>
-
-                </div>
-
-                <div class="things-box">
-                    <i class='bx bx-headphone'></i>
-                    <h3>Tabla</h3>
-                    <p id="skillIntro2">Apart from my interests in STEM, I am also an avid musican! By delving deeper into classical Indian music, I have really
-                        been able to open doors to a new world that would not only allow me to enjoy my playing, but also alleviate any stress that I have.
-                    </p>
-                    <p id="skillpara2">
-                        I have given numerous concerts in multiple places around the country, and I am even writing a book to allow students of all ages
-                        have access to a full guide of tabla, whether that be caring for them or playing them at an advanced level. 
-                    </p>
-                    <a class="btn" id="btn3">Read More</a>
-                    <script>document.getElementById('skillpara2').hidden = true;</script>
-
-                </div>
-            </div>
-            
-        </section>
-
-        <!-- portfolio section design -->
-        <section class="portfolio" id="portfolio">
-            <h2 class = "heading"> Latest <span>Projects</span></h2>
-        
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="Images/Personal Portfolio.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Personal Portfolio</h4>
-                        <br>
-                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">This is my Personal Website project! Yes, the one you are currently looking at! 
-                            Please take a look at the Github repo for more details!!</p>
-                            <br>
-                            <a id = "Github" href="https://github.com/TerminatingCoder101/terminatingcoder101.github.io" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <div class="contact-cards">
+                    <div class="contact-card glass-card">
+                        <div class="contact-header">
+                            <svg class="icon contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span class="contact-label">Email</span>
                         </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/ClockGif.gif" alt="">
-                    <div id = "Clock" class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Analog Clock</h4>
-                        <p style = "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">This was a simple analog clock that I made using my knowledge in HTML, CSS, and JS. My main focus for this project was to improve my JS skills. 
-                            By implementing certain functions, I was able to make the clock show the proper time. The link to my Github repo is below! Hope you like it!
-                        </p>
-                        <a id = "Github" href="https://github.com/TerminatingCoder101/Analog-Clock-Project-" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                        <p class="contact-value">infiniteocean100@gmail.com</p>
                     </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/HomeIcon3.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Festival Of Tabla</h4>
-                        <br>
-                        <p style = "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">In the summer of 2022, I gave a ~30-minute solo concert for the Indian drums. The concert was in front of
-                            international maestros in the field of Indian Classical music. Click the link below to watch the video! 
-                        </p>
-                        <a href="https://www.youtube.com/watch?v=RTUXNs6Rf98" target="_blank" rel="noopener noreferrer" class="btn_portfolio">Watch Now!</a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/Robotics Pic..jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Robotics</h4>
-                        <br>
-                        <p id = "robotics" style= "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">
-                            I have loved robotics my entire life, and after learning more about it, I have been able to really quench my thirst of knowledge
-                            for the subject. 
-                        </p>
-                        <p style= "color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;" id="Second">
-                            I made my own "Amazon Alexa", which can answer questions similar to the real Alex. I have also done some random fun engineering projects.
-                            I am also part of my schools FIRST Robotics team, where I hold the positions of one of the lead advisors and programmers.
-                        </p>
-                        <button style="padding-bottom: 1rem;" class = "btn_portfolio" id = "RobotBtn">Read More</button>
-
-                        <script>document.getElementById('Second').hidden = true;</script> 
-
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/Speech and Debate.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 0.5rem; padding-right: 0.5rem;">Speech & Debate</h4>
-                        <br>
-                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">
-                            I have been doing Speech and Debate for over 6 years now, and I have one numerous medals.
-                            After much time and dedication, I was able to earn the bronze award for my communication skills!
-                        </p>
-                        <!-- <a href="#" class="btn_portfolio">Read More</a> -->
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="Images/Yoga Pose.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4 style="color: rgb(13, 47, 237); font-weight: 1000; background-color: rgb(192, 192, 170); border-radius: 20px; padding-top: 0%; padding-left: 1rem; padding-right: 1rem;">Yoga</h4>
-                        <br>
-                        <p style="color: rgb(20, 13, 237); padding-top: 1rem; padding-bottom: 1rem; font-weight: 1000; padding-right: 1rem; padding-left: 1rem; background-color: aliceblue; border-radius: 20px;">
-                            I was introduced to yoga around 5 years ago and ever since, my life has been changed. 
-                            I have been guiding and teaching many kids weekly to practice yoga and empower them to do better in their lives. 
-                        </p>
+                    <div class="contact-card glass-card">
+                        <div class="contact-header">
+                            <svg class="icon contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span class="contact-label">Phone</span>
+                        </div>
+                        <p class="contact-value">714-406-4102</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- contact section design -->
-
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span></h2>
-
-            <form action="sendMail()">
-                <div class="input-box">
-                    <input id = "name" type = "text" placeholder="Name">
-                    <input id = "email" type = "email" placeholder="Email">
+    <!-- Experience Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title gradient-text">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card glass-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Student Researcher</h3>
+                            <p class="experience-company">US Air Force Research Lab</p>
+                            <p class="experience-date">Summer 2024 – Present</p>
+                        </div>
+                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Programming Boston Dynamics Spot Robot Dog in Manufacturing Directorate</li>
+                        <li>Created GUI compatible with ARES OS for Soft Materials lab (published and in use)</li>
+                        <li>Working on next-gen control operations using Julia algorithms</li>
+                        <li>Developed multi-domain accessibility programs for OptiTrack System</li>
+                    </ul>
                 </div>
-                <div class="input-box">
-                    <input id = "number" type = "number" placeholder="Number">
-                    <input id = "subject" type = "text" placeholder="Email Subject">
+
+                <div class="experience-card glass-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Student Researcher</h3>
+                            <p class="experience-company">Fuller Lab @ Stanford University</p>
+                            <p class="experience-date">Spring 2023 - Fall 2024</p>
+                        </div>
+                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"/>
+                            <polyline points="8,6 2,12 8,18"/>
+                        </svg>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed ML pipeline using computer vision for pupil detection with Meta's SAM 2</li>
+                        <li>Built interdisciplinary app for ophthalmological disease detection (deployed to Altron)</li>
+                        <li>Autonomously cut ribbon using computer vision for lab inauguration</li>
+                    </ul>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button id="submitButton" type="submit" class="btn">Send</button>
-            </form>
-        </section-contact>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init("lbkH81IwWeruBNumC");
-            })();
-        </script>
 
-        <!-- Footer Section  -->
-        
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2023 by Sagar Shah | All Rights Reserved</p>
+                <div class="experience-card glass-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Student Researcher</h3>
+                            <p class="experience-company">Laksari Lab @ UC Riverside</p>
+                            <p class="experience-date">Spring 2024 - Spring 2025</p>
+                        </div>
+                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed ML detection model for traumatic brain injuries using advanced U-Nets</li>
+                        <li>Designed algorithm for ischemic stroke prediction with MatLab simulations</li>
+                        <li>Collaborated with University of Arizona and hospitals nationwide</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bxs-up-arrow-alt bx-tada bx-rotate-90' ></i></a>
+        </div>
+    </section>
+
+    <!-- Education & Awards Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text">Education & Awards</h2>
+            <div class="education-grid">
+                <div class="education-column">
+                    <h3 class="column-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        Education
+                    </h3>
+                    <div class="education-card glass-card">
+                        <h4 class="education-title">Multiple Associates Degrees</h4>
+                        <p class="education-description">Computer Science, Math, Physics, Engineering</p>
+                        <p class="education-stats">117.5 units • 3.85 GPA • 6 Degrees</p>
+                    </div>
+                    <div class="education-card glass-card">
+                        <h4 class="education-title">High School Valedictorian</h4>
+                        <p class="education-description">Buena Vista Virtual High School</p>
+                        <p class="education-stats">Class of 450 • 3.91 GPA</p>
+                    </div>
+                </div>
+
+                <div class="awards-column">
+                    <h3 class="column-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                        </svg>
+                        Honors & Awards
+                    </h3>
+                    <div class="awards-grid">
+                        <div class="award-card glass-card">
+                            <h4 class="award-title">US Air Force Wright Scholar</h4>
+                            <p class="award-description">1 of 15 out of 447 applicants (2024)</p>
+                        </div>
+                        <div class="award-card glass-card">
+                            <h4 class="award-title">NASA MINDS Grand Champions</h4>
+                            <p class="award-description">Project deployed to 2026 Artemis Mission</p>
+                        </div>
+                        <div class="award-card glass-card">
+                            <h4 class="award-title">Student of Distinction</h4>
+                            <p class="award-description">1 of 5 out of all 2025 graduates</p>
+                        </div>
+                        <div class="award-card glass-card">
+                            <h4 class="award-title">Speech & Debate Silver Medalist</h4>
+                            <p class="award-description">Toastmasters International</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-title">Let's Connect</h3>
+            <p class="footer-description">
+                I'm always interested in discussing new opportunities, research collaborations, or innovative projects in
+                AI, robotics, and aerospace engineering.
+            </p>
+            <div class="footer-buttons">
+                <button class="btn btn-secondary btn-lg">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    infiniteocean100@gmail.com
+                </button>
+                <button class="btn btn-outline btn-lg footer-outline">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    714-406-4102
+                </button>
+            </div>
+        </div>
+    </footer>
 
-        <script>  
-            let sections = document.querySelectorAll('section');
-            let navLinks = document.querySelectorAll('header nav a');
-
-            window.onscroll = () => {
-                sections.forEach(sec => {
-                    let top = window.scrollY;
-                    let offset = sec.offsetTop - 150;
-                    let height = sec.offsetHeight;
-                    let id = sec.getAttribute('id');
-                    if(top>=offset && top < offset + height) {
-                        navLinks.forEach(links => {
-                            links.classList.remove('active');
-                            document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-                        });
-                    };
-                });
-                let header = document.querySelector('header');
-                header.classList.toggle('sticky', window.scrollY > 100);
-                menuIcon.classList.remove('bx-x');
-                navbar.classList.remove('active');
-            };
-            ScrollReveal({
-                reset: true,
-                distance: '80px',
-                duration: 2000,
-                delay: 150
-            });
-            ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-            ScrollReveal().reveal('.home-img, .things-container, .portfolio-box, .contact form', {origin: 'bottom'});
-            ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
-            ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
-        </script>
-
-        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-        <script src = "script1.js"></script>
-
-    </body>
-
-
+    <script src="script.js"></script>
+</body>
 </html>

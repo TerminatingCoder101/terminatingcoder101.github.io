@@ -1,5 +1,50 @@
 // Smooth scrolling for anchor links
 document.addEventListener("DOMContentLoaded", () => {
+  // Navigation functionality
+  const navLinks = document.querySelectorAll(".nav-link")
+  const navToggle = document.querySelector(".nav-toggle")
+  const navLinksContainer = document.querySelector(".nav-links")
+
+  // Update active navigation link based on scroll position
+  function updateActiveNavLink() {
+    const sections = document.querySelectorAll("section[id]")
+    const scrollPos = window.scrollY + 100
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop
+      const sectionHeight = section.offsetHeight
+      const sectionId = section.getAttribute("id")
+
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        navLinks.forEach((link) => {
+          link.classList.remove("active")
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active")
+          }
+        })
+      }
+    })
+  }
+
+  // Mobile menu toggle functionality
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      navLinksContainer.classList.toggle("mobile-open")
+      navToggle.classList.toggle("active")
+    })
+  }
+
+  // Close mobile menu when clicking on a link
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinksContainer.classList.remove("mobile-open")
+      navToggle.classList.remove("active")
+    })
+  })
+
+  // Update active link on scroll
+  window.addEventListener("scroll", debounce(updateActiveNavLink, 10))
+
   // Add smooth scrolling to all links
   const links = document.querySelectorAll('a[href^="#"]')
 
@@ -11,7 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetSection = document.querySelector(targetId)
 
       if (targetSection) {
-        targetSection.scrollIntoView({
+        const navbarHeight = document.querySelector(".navbar").offsetHeight
+        const targetPosition = targetSection.offsetTop - navbarHeight - 20
+
+        window.scrollTo({
+          top: targetPosition,
           behavior: "smooth",
         })
       }

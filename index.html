@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Shah - Computer Science Researcher & Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Added horizontal navigation bar -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span href = "#home" class="nav-name" >Sagar Shah</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section with Gradient Background -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">SAGAR SHAH</h1>
@@ -24,7 +43,7 @@
                     </svg>
                     Contact Me
                 </button>
-                <button class="btn btn-outline glass-effect">
+                <button class="btn btn-outline glass-effect" onclick="window.location.href='resume.html'">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                         <polyline points="15,3 21,3 21,9"/>
@@ -33,13 +52,18 @@
                     View Resume
                 </button>
             </div>
+            <div class="scroll-arrow">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"/>
+                </svg>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title gradient-text">About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-content">
                     <p class="about-text">
@@ -50,10 +74,11 @@
                     <div class="skills-tags">
                         <span class="skill-tag glass-card">Python</span>
                         <span class="skill-tag glass-card">C++</span>
+                        <span class="skill-tag glass-card">Julia</span>
                         <span class="skill-tag glass-card">Machine Learning</span>
-                        <span class="skill-tag glass-card">Computer Vision</span>
+                        <span class="skill-tag glass-card">Building</span>
                         <span class="skill-tag glass-card">Robotics</span>
-                        <span class="skill-tag glass-card">React</span>
+                        <span class="skill-tag glass-card">Aerospace</span>
                     </div>
                     <div class="social-buttons">
                         <button class="btn btn-outline btn-sm">
@@ -72,181 +97,10 @@
                         </button>
                     </div>
                 </div>
-                <div class="contact-cards">
-                    <div class="contact-card glass-card">
-                        <div class="contact-header">
-                            <svg class="icon contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <span class="contact-label">Email</span>
-                        </div>
-                        <p class="contact-value">infiniteocean100@gmail.com</p>
-                    </div>
-                    <div class="contact-card glass-card">
-                        <div class="contact-header">
-                            <svg class="icon contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                            <span class="contact-label">Phone</span>
-                        </div>
-                        <p class="contact-value">714-406-4102</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title gradient-text">Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card glass-card">
-                    <div class="experience-header">
-                        <div class="experience-info">
-                            <h3 class="experience-title">Student Researcher</h3>
-                            <p class="experience-company">US Air Force Research Lab</p>
-                            <p class="experience-date">Summer 2024 – Present</p>
-                        </div>
-                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-                            <line x1="3" y1="6" x2="21" y2="6"/>
-                            <path d="M16 10a4 4 0 0 1-8 0"/>
-                        </svg>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Programming Boston Dynamics Spot Robot Dog in Manufacturing Directorate</li>
-                        <li>Created GUI compatible with ARES OS for Soft Materials lab (published and in use)</li>
-                        <li>Working on next-gen control operations using Julia algorithms</li>
-                        <li>Developed multi-domain accessibility programs for OptiTrack System</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card glass-card">
-                    <div class="experience-header">
-                        <div class="experience-info">
-                            <h3 class="experience-title">Student Researcher</h3>
-                            <p class="experience-company">Fuller Lab @ Stanford University</p>
-                            <p class="experience-date">Spring 2023 - Fall 2024</p>
-                        </div>
-                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16,18 22,12 16,6"/>
-                            <polyline points="8,6 2,12 8,18"/>
-                        </svg>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Developed ML pipeline using computer vision for pupil detection with Meta's SAM 2</li>
-                        <li>Built interdisciplinary app for ophthalmological disease detection (deployed to Altron)</li>
-                        <li>Autonomously cut ribbon using computer vision for lab inauguration</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card glass-card">
-                    <div class="experience-header">
-                        <div class="experience-info">
-                            <h3 class="experience-title">Student Researcher</h3>
-                            <p class="experience-company">Laksari Lab @ UC Riverside</p>
-                            <p class="experience-date">Spring 2024 - Spring 2025</p>
-                        </div>
-                        <svg class="icon experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Developed ML detection model for traumatic brain injuries using advanced U-Nets</li>
-                        <li>Designed algorithm for ischemic stroke prediction with MatLab simulations</li>
-                        <li>Collaborated with University of Arizona and hospitals nationwide</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Awards Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title gradient-text">Education & Awards</h2>
-            <div class="education-grid">
-                <div class="education-column">
-                    <h3 class="column-title">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                        </svg>
-                        Education
-                    </h3>
-                    <div class="education-card glass-card">
-                        <h4 class="education-title">Multiple Associates Degrees</h4>
-                        <p class="education-description">Computer Science, Math, Physics, Engineering</p>
-                        <p class="education-stats">117.5 units • 3.85 GPA • 6 Degrees</p>
-                    </div>
-                    <div class="education-card glass-card">
-                        <h4 class="education-title">High School Valedictorian</h4>
-                        <p class="education-description">Buena Vista Virtual High School</p>
-                        <p class="education-stats">Class of 450 • 3.91 GPA</p>
-                    </div>
-                </div>
-
-                <div class="awards-column">
-                    <h3 class="column-title">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="8" r="7"/>
-                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
-                        </svg>
-                        Honors & Awards
-                    </h3>
-                    <div class="awards-grid">
-                        <div class="award-card glass-card">
-                            <h4 class="award-title">US Air Force Wright Scholar</h4>
-                            <p class="award-description">1 of 15 out of 447 applicants (2024)</p>
-                        </div>
-                        <div class="award-card glass-card">
-                            <h4 class="award-title">NASA MINDS Grand Champions</h4>
-                            <p class="award-description">Project deployed to 2026 Artemis Mission</p>
-                        </div>
-                        <div class="award-card glass-card">
-                            <h4 class="award-title">Student of Distinction</h4>
-                            <p class="award-description">1 of 5 out of all 2025 graduates</p>
-                        </div>
-                        <div class="award-card glass-card">
-                            <h4 class="award-title">Speech & Debate Silver Medalist</h4>
-                            <p class="award-description">Toastmasters International</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <h3 class="footer-title">Let's Connect</h3>
-            <p class="footer-description">
-                I'm always interested in discussing new opportunities, research collaborations, or innovative projects in
-                AI, robotics, and aerospace engineering.
-            </p>
-            <div class="footer-buttons">
-                <button class="btn btn-secondary btn-lg">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    infiniteocean100@gmail.com
-                </button>
-                <button class="btn btn-outline btn-lg footer-outline">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                    </svg>
-                    714-406-4102
-                </button>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

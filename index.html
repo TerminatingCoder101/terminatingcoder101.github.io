@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Shah - Computer Science Researcher & Engineer</title>
+    <title>Sagar Shah - Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon1.png">
 </head>
 <body>
     <!-- Added horizontal navigation bar -->
@@ -33,16 +34,9 @@
         <div class="hero-content">
             <h1 class="hero-title">SAGAR SHAH</h1>
             <p class="hero-subtitle">
-                Computer Science Researcher & Engineer specializing in AI/ML, Robotics, and Aerospace Systems
+                Researcher & Engineer specializing in Machine Learning, Hardware, Robotics GNC, and Aerospace Systems
             </p>
             <div class="hero-buttons">
-                <button class="btn btn-primary glass-effect">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Contact Me
-                </button>
                 <button class="btn btn-outline glass-effect" onclick="window.location.href='resume.html'">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -63,13 +57,13 @@
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
+            <img src="/profilepic.jpg" alt="Sagar Shah" class="profile-image">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-content">
                     <p class="about-text">
-                        I'm a dedicated computer science researcher with extensive experience in AI/ML, robotics, and aerospace
-                        systems. Currently working with the US Air Force Research Lab and Stanford University, I specialize in
-                        developing cutting-edge solutions for complex engineering challenges.
+                        Hello there! My name is Sagar, and I'm from Southern California! I'm community college graduate with 6 Associate's Degrees in STEM, and am currently taking a gap year to
+                        dip my toes in industry. Though my interests are quite diverse, my work mostly revolves around three main things: Machine Learning, Robotics, and Aerospace.
                     </p>
                     <div class="skills-tags">
                         <span class="skill-tag glass-card">Python</span>
@@ -80,22 +74,24 @@
                         <span class="skill-tag glass-card">Robotics</span>
                         <span class="skill-tag glass-card">Aerospace</span>
                     </div>
-                    <div class="social-buttons">
-                        <button class="btn btn-outline btn-sm">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                            GitHub
-                        </button>
-                        <button class="btn btn-outline btn-sm">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect x="2" y="9" width="4" height="12"/>
-                                <circle cx="4" cy="4" r="2"/>
-                            </svg>
-                            LinkedIn
-                        </button>
-                    </div>
+                <div class="social-buttons">
+                    <!-- Use an <a> tag for the GitHub link -->
+                    <a class="btn btn-outline btn-sm" href="https://github.com/TerminatingCoder101" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <!-- Use an <a> tag for the LinkedIn link -->
+                    <a class="btn btn-outline btn-sm" href="https://www.linkedin.com/in/sagar-s-3a1b81244/" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
                 </div>
             </div>
         </div>

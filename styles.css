@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(to bottom right, rgb(54, 54, 54), white);
+  background: linear-gradient(to bottom right, rgb(33, 33, 33), white);
   background-attachment: fixed;
   min-height: 90vh;
   overflow-x: hidden;
@@ -290,6 +290,17 @@ h6 {
   text-align: center;
   margin-bottom: 4rem;
   color: white;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+  margin: 0 auto 1.5rem auto; /* Centers the image and adds space below it */
+  border: 4px solid white; /* Optional: Adds a white border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
 }
 
 /* === ABOUT SECTION OVERRIDES === */

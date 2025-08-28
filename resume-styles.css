@@ -18,6 +18,18 @@ body {
 }
 
 
+.section-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Adjust as needed for spacing below the header */
+}
+
+/* Optional: You may need to remove the margin from the original header */
+.section-header-container .section-header {
+    margin: 0;
+}
+
 .nav-back {
   display: flex;
   align-items: center;
@@ -225,7 +237,7 @@ body {
 .degree-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #f9fafb;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -236,13 +248,13 @@ body {
 }
 
 .education-details {
-  color: #d1d5db;
+  color: #ffffff;
   font-size: 0.875rem;
   margin-bottom: 4px;
 }
 
 .gpa {
-  color: #babfc8;
+  color: #ffffff;
   font-size: 0.75rem;
 }
 
@@ -295,13 +307,13 @@ body {
 .award-name {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #f9fafb;
+  color: #ffffff;
   margin-bottom: 4px;
 }
 
 .award-desc {
   font-size: 0.75rem;
-  color: #9ca3af;
+  color: #ffffff;
   line-height: 1.4;
 }
 
@@ -449,3 +461,18 @@ body {
     margin-left: 8px;
   }
 }
+
+
+
+
+/*
+Home Page
+Student not researcher and engineer
+
+Hi! My name is Sagar! (not hello)
+
+6 Associates Degrees in the science and engineering field
+
+I like to focus on things that quency my curiousty, growth, etc. 
+
+*/

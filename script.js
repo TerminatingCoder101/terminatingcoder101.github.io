@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i < text.length) {
         heroTitle.textContent += text.charAt(i)
         i++
-        setTimeout(typeWriter, 100)
+        setTimeout(typeWriter, 300)
       }
     }
 
